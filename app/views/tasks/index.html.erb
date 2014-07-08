@@ -1,0 +1,25 @@
+<h1>All of your tasks</h1>
+
+<%= form_for @task do |form| %>
+  <div>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+  <div>
+    <%= form.label :body %>
+    <%= form.text_field :body %>
+  </div>
+  <div>
+    <%= form.submit "Create task" %>
+  </div>
+<% end %>
+
+<ul>
+  <% @tasks.each do |task| %>
+    <li>
+      <p><%= task.title %></p>
+      <p>&mdash; <%= task.body %></p>
+    </li>
+<% end %>
+</ul>
+

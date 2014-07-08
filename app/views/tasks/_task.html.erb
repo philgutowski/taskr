@@ -1,7 +1,5 @@
-<% @tasks.each do |task| %>
-  <li>
-    <%= button_to "mark complete", task,  method: :patch %>
-    <p><%= task.title %></p>
-    <p>&mdash; <%= task.body %></p>
-  </li>
-<% end %>
+<li>
+  <%= button_to "mark complete", task,  method: :patch %>
+  <p><%= task.title %></p>
+  <p>&mdash; <%= task.body %></p>
+</li>

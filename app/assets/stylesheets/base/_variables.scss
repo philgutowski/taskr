@@ -1,8 +1,10 @@
 // Typography
+@import url(http://fonts.googleapis.com/css?family=Fredoka+One);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 $sans-serif: $helvetica;
 $serif: $georgia;
-$base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
+$base-font-family: 'PT Sans', sans-serif;
+$header-font-family: 'Fredoka One', cursive; 
 
 // Sizes
 $base-font-size: 1em;

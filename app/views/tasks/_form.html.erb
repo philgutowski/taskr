@@ -1,0 +1,14 @@
+<%= form_for @task do |form| %>
+  <%= render "errors", target: @task %>
+  <div>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+  <div>
+    <%= form.label :body %>
+    <%= form.text_field :body %>
+  </div>
+  <div>
+    <%= form.submit "Create task" %>
+  </div>
+<% end %>

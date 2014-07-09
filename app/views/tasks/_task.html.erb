@@ -1,5 +1,8 @@
 <li>
-  <%= button_to "mark complete", task,  method: :patch %>
+<%= form_for task do |form| %>
+  <%= form.check_box :completed, class: "completed_checkbox" %>
+<% end %>
+<p><%= link_to "delete", id: "delete" %></p>
   <p><%= task.title %></p>
-  <p>&mdash; <%= task.body %></p>
+  <p><%= task.body %></p>
 </li>

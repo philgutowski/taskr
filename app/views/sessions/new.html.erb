@@ -8,9 +8,9 @@
     <%= form.password_field :password %>
   </div>
   <div>
-    <%= link_to "Sign-up", :sign_up %>
+    <%= form.submit "Sign in" %>
   </div>
   <div>
-    <%= form.submit "Sign in" %>
+    <h3>or, <%= link_to "Sign-up", :sign_up %></h3>
   </div>
 <% end %>

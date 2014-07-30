@@ -22,7 +22,15 @@ class TasksController < ApplicationController
   def update
     task = current_user.tasks.find(params[:id])
 
-    if  task.update(task_params)
+    if task.update(task_params)
+      render nothing: true, status: 200
+    end
+  end
+
+  def destroy
+    task = current_user.tasks.find(params[:id])
+    
+    if task.destroy
       render nothing: true, status: 200
     end
   end

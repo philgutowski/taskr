@@ -30,6 +30,11 @@ $(function(){
     });
   });
 
+$(".delete").click(function(event) {
+  $(event.target).hide();
+
+  return false;
+});
 
 
 

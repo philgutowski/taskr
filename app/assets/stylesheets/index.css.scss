@@ -1,0 +1,59 @@
+body {
+  background-color: rgb(161, 194, 208);
+}
+
+.index {
+  @include outer-container;
+  background-color: rgb(73, 122, 163);
+
+  .bird {
+    @include span-columns(6);
+    @include shift(7);
+    background-image: image-url("bird.png");
+    height: 526px;
+    background-size: cover;
+    margin-top: -160px;
+    background-repeat: no-repeat;
+  }
+
+  .title-balloon {
+    @include span-columns(8);
+    @include shift(4);
+    background-image: image-url("title_balloon.png");
+    width: 500px;
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    h1 {
+      position: relative;
+      font-size: 7em;
+      padding-top: 140px;
+      padding-left: 75px;
+      color: white;
+    }
+  }
+
+  .taglines {
+    @include span-columns(12);
+    margin-top: -400px;
+    margin-left: -10px;
+    width: 470px;
+    .tagline-1 {
+      margin: 15px, 0;
+      background-color: red;
+      color: white;
+      padding: 8px 25px;
+    }
+    .tagline-2 {
+      background-color: red;
+      color: white;
+      margin-top: 20px;
+      padding: 8px 25px;
+    }
+  }
+
+  .signin h2 a {
+    color: white;
+  }
+}

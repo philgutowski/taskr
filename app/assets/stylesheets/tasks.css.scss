@@ -1,0 +1,18 @@
+.task-grid {
+  @include outer-container();
+  .block {
+    @include span-columns(12);
+    @include omega(1n);
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 20px 0;
+    font-size: 1.25em;
+    text-align: center;
+    .completed_checkbox {
+    }
+    #task-title {
+      font-weight: bold;
+    }
+  }
+}

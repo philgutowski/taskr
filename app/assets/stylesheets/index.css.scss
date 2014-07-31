@@ -2,6 +2,10 @@ body {
   background-color: rgb(161, 194, 208);
 }
 
+.outer-container {
+  @include outer-container;
+}
+
 .index {
   @include outer-container;
   background-color: rgb(73, 122, 163);
